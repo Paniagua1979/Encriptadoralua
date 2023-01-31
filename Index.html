@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <title>Encriptador de textos</title>
+    </head>
+    <body>
+
+        <img class="logo" src="imagenes/Logo.png">
+
+        <main class="Menu">
+            <section id="form box">
+                <form id="formulario">
+
+                    <textarea class="encriptador" name="input_texto" id="input_texto" placeholder="Ingrese su texto aqui" rows="5" cols="50"></textarea>
+                    <h3 class="informacion">Ingrese solo letras minusculas, sin acentos</h3>
+                    <div class="bottons">
+                        <input type="submit" class="bttn_encriptar" value="Encriptar!!" id="bttn_encriptar">
+                        <input type="submit" class="bttn_desencriptar" value="Desencriptar" id="bttn_desencriptar">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <main class="msg_box">
+            <h2>Mensaje Encriptado</h2>
+            <textarea class="desencriptador" name="mensaje_encriptado" id="mensaje_texto" rows="5" cols="50"></textarea>
+            <input type="submit" class="bttn_copytext" value="Copiar texto" id="bttn_copytext">
+        </main>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
